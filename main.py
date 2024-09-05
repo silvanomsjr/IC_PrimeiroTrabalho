@@ -97,7 +97,7 @@ input_shape = (32000, 1)  # Tamanho do vetor da forma de onda (32k amostras)
 model = build_cnn(input_shape)
 
 # Definir a taxa de aprendizado e compilar o modelo
-learning_rate = 0.015
+learning_rate = 0.005
 optimizer = tf.keras.optimizers.Adam(learning_rate=learning_rate)
 
 model.compile(
